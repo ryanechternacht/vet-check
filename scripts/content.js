@@ -33,7 +33,7 @@ function generateReminders() {
     addCard(byPlayer, playerId, 'Geologist')
   }
 
-  const wazaSmallPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S228_WazaSmallAnimalsProgram)")
+  const wazaSmallPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S228_WazaSmallAnimalProgram)")
   if (wazaSmallPlayer) {
     const playerId = wazaSmallPlayer.id.split('-')[2]
     addCard(byPlayer, playerId, 'Waza Small')
