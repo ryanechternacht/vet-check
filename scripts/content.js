@@ -15,7 +15,7 @@ function generateReminders() {
     addCard(byPlayer, playerId, 'Veternarian')
   }
 
-  const qlabPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S225_Quarantine_Lab)")
+  const qlabPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S225_QuarantineLab)")
   if (qlabPlayer) {
     const playerId = qlabPlayer.id.split('-')[2]
     addCard(byPlayer, playerId, 'Quarantine Lab')
@@ -28,16 +28,32 @@ function generateReminders() {
   }
 
   const geoPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S242_Geologist)")
-  console.log(geoPlayer)
   if (geoPlayer) {
     const playerId = geoPlayer.id.split('-')[2]
     addCard(byPlayer, playerId, 'Geologist')
   }
 
+  const wazaSmallPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S228_WazaSmallAnimalsProgram)")
+  if (wazaSmallPlayer) {
+    const playerId = wazaSmallPlayer.id.split('-')[2]
+    addCard(byPlayer, playerId, 'Waza Small')
+  }
+
+  const wazaLargePlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S263_WazaLargeAnimalProgram)")
+  if (wazaLargePlayer) {
+    const playerId = wazaLargePlayer.id.split('-')[2]
+    addCard(byPlayer, playerId, 'Waza Large')
+  }
+
+  const specialAssignmentPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S227_WazaSpecialAssignment)")
+  if (specialAssignmentPlayer) {
+    const playerId = specialAssignmentPlayer.id.split('-')[2]
+    addCard(byPlayer, playerId, 'Waza Special Assignment')
+  }
+
   const playerLookup = Object.keys(byPlayer).reduce((obj, playerId) => {
     
     const playerDiv = document.querySelector(`#player_name_${playerId} a`)
-    console.log('player', playerId, playerDiv)
 
     obj[playerId] = {
       id: playerId, 
