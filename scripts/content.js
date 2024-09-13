@@ -51,8 +51,13 @@ function generateReminders() {
     addCard(byPlayer, playerId, 'Waza Special Assignment')
   }
 
+  const explorerPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S262_Explorer)")
+  if (explorerPlayer) {
+    const playerId = explorerPlayer.id.split('-')[2]
+    addCard(byPlayer, playerId, 'Explorer')
+  }
+
   const playerLookup = Object.keys(byPlayer).reduce((obj, playerId) => {
-    
     const playerDiv = document.querySelector(`#player_name_${playerId} a`)
 
     obj[playerId] = {
