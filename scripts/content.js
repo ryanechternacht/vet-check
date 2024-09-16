@@ -57,6 +57,12 @@ function generateReminders() {
     addCard(byPlayer, playerId, 'Explorer')
   }
 
+  const diversityPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S219_DiversityResearcher)")
+  if (diversityPlayer) {
+    const playerId = diversityPlayer.id.split('-')[2]
+    addCard(byPlayer, playerId, 'Diversity Researcher')
+  }
+
   const playerLookup = Object.keys(byPlayer).reduce((obj, playerId) => {
     const playerDiv = document.querySelector(`#player_name_${playerId} a`)
 
