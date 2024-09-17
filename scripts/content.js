@@ -12,7 +12,7 @@ function generateReminders() {
   const vetPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S203_Veterinarian)")
   if (vetPlayer) {
     const playerId = vetPlayer.id.split('-')[2]
-    addCard(byPlayer, playerId, 'Veternarian')
+    addCard(byPlayer, playerId, 'Veterinarian')
   }
 
   const qlabPlayer = document.querySelector(".player-board-inPlay-sponsors:has(#card-S225_QuarantineLab)")
