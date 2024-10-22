@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Vet Check",
-  "version": "1.7",
+  "version": "1.8",
   "description": "Helpful reminders for paying Ark Nova on Board Game Arena",
 
   "icons": {
@@ -11,7 +11,8 @@
     {
       "js": ["scripts/content.js"],
       "matches": [
-        "https://boardgamearena.com/*/arknova?table=*"
+        "https://boardgamearena.com/*/arknova?table=*",
+        "https://boardgamearena.com/*/arknovamw?table=*"
       ]
     }
   ]
